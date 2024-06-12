@@ -1,6 +1,6 @@
 package org.example.lesson_2
 
-fun main(){
+fun main() {
     val quantityRegular = 50
     val salaryRegular = 30000
     val quantityIntern = 30
