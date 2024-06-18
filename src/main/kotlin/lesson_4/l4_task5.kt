@@ -4,6 +4,7 @@ fun main() {
     val minStaff = 55
     val maxStaff = 70
     val foodBoxesMin = 50
+
     println("Есть ли повреждения?")
     val isDamage = readln().toBoolean()
     println("Количество членов экипажа?")
@@ -12,6 +13,7 @@ fun main() {
     val foodBoxes = readln().toInt()
     println("Погода благоприятна?")
     val isWeatherOk = readln().toBoolean()
+
     if ((foodBoxes > foodBoxesMin && !isDamage && staff >= minStaff && staff <= maxStaff) ||
         isDamage && staff == maxStaff && isWeatherOk && foodBoxes >= foodBoxesMin
     ) {
