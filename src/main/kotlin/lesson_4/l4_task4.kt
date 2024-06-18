@@ -6,11 +6,12 @@ fun main() {
     val dayBackIsEven = true
     val dayHandsIsEven = false
     val dayPressIsEven = false
+    val dayNumberIsEven = dayNumber % 2 == 0
 
     println(
-        "Упражнения для рук:\t \t ${(dayNumber % 2 == 0) == dayHandsIsEven}\n" +
-                "Упражнения для ног:\t \t ${(dayNumber % 2 == 0) == dayLegsIsEven}\n" +
-                "Упражнения для спины:\t ${(dayNumber % 2 == 0) == dayBackIsEven}\n" +
-                "Упражнения для пресса:\t ${(dayNumber % 2 == 0) == dayPressIsEven}"
+        "Упражнения для рук:\t \t ${dayNumberIsEven == dayHandsIsEven}\n" +
+                "Упражнения для ног:\t \t ${dayNumberIsEven == dayLegsIsEven}\n" +
+                "Упражнения для спины:\t ${dayNumberIsEven == dayBackIsEven}\n" +
+                "Упражнения для пресса:\t ${dayNumberIsEven == dayPressIsEven}"
     )
 }
